@@ -1,11 +1,12 @@
 local tArgs= {...}
 
+local modetype = beta
 
 local delete_Files = false
 local reboot = false
 
 local user = "CoopPlayzz"
-local branch = 1
+local branch = modetype
 
 
 
@@ -33,7 +34,7 @@ end
 
 
 wget("http://www.pastebin.com/raw/W5ZkVYSi",".gitget")
-shell.run(".gitget "..user.." Coopplayzz "..branch.." CoopOS")
+shell.run(".gitget "..user.." CoopOS "..branch.." CoopOSsource")
 formatFS()
 print("Installation completed.")
 if reboot then os.reboot() end
