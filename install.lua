@@ -1,7 +1,7 @@
 local tArgs= {...}
 
 
-local delete_files = false
+local delete_Files = false
 local reboot = false
 
 
