@@ -44,16 +44,16 @@ print("Installation completed.(not relly just a test)")
 
 
 if reboot then
-  print"SYSTEM REBOOTING IN"..rebootCountdown..)
+  print("SYSTEM REBOOTING IN"..rebootCountdown..)
   sleep(1)
   rebootCountdown - 1
-  print"SYSTEM REBOOTING IN"..rebootCountdown..)
+  print("SYSTEM REBOOTING IN"..rebootCountdown..)
   sleep(1)
   rebootCountdown - 1
-  print"SYSTEM REBOOTING IN"..rebootCountdown..)
+  print("SYSTEM REBOOTING IN"..rebootCountdown..)
   sleep(1)
   rebootCountdown - 1
-  print"SYSTEM REBOOTING IN"..rebootCountdown..)
+  print("SYSTEM REBOOTING IN"..rebootCountdown..)
   sleep(1)
   rebootCountdown - 1
   sleep(1)
