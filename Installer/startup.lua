@@ -17,6 +17,7 @@ if fs.exists("install.lua") then
 end
 if fs.exists("installerdown.lua")
   fs.delete("installerdown.lua")
+end
 print('downloading the "installer download"')
 sleep(4)
 os.pullEvent = pullEvent
