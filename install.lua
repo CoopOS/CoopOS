@@ -39,16 +39,12 @@ end
 
 function installOS()
   
-  
+  print('???')
   --coming soon
 end
 
 
 sleep(6)
-
-
-
-shell.run(".gitget "..user.." CoopOS "..branch.." CoopOS")
 installOS()
 print("Installation completed.(not relly just a test)")
 
