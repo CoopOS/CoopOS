@@ -99,7 +99,9 @@ print("Downloading...")
 if fs.exists("startup.lua") then
   fs.delete("startup.lua")
 end
-if fs.exists("installerdown")
+if fs.exists("installerdown.lua") then
+  fs.delete("installerdown.lua")
+end
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
 
 sleep(.75)
