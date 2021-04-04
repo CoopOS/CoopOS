@@ -22,8 +22,13 @@ if modetype == "beta" then
   sleep(.75)
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
   print('HOLD "Ctrl + T" TO QUIT INSTALLING THE BETA')
+  print('IF YOU WANT TO INSTALL THE BETA THEN WAIT 15 SECONDS')
+  sleep(15)
+  os.pullEvent = os.pullEventRaw
+  term.setTextColor(colors.yellow)
+  print('Now Continuing')
   term.setTextColor(colors.white)
-  sleep(4)
+  sleep(2)
   print('Bugs? Submit a issue on GitHub for the beta')
   sleep(8)
 end
@@ -45,7 +50,7 @@ elseif modetype == "master" then
 else
   error('DOES NOT HAVE VALID MODE TYPE')
 end
-
+print(version)
 
 sleep(10)
 
