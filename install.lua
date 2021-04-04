@@ -21,6 +21,7 @@ if modetype == "beta" then
   print('WARNING:')
   sleep(.75)
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
+  print('HOLD "Ctrl + T" TO QUIT INSTALLING THE BETA')
   term.setTextColor(colors.white)
   sleep(4)
   print('Bugs? Submit a issue on GitHub for the beta')
@@ -58,7 +59,7 @@ shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Install
 sleep(6)
 print('Got CoopOS Installer Startup')
 
-
+fs.delete("installerdown.lua")
 
 
 shell.run('label set "CoopOSv'..version..'"')
