@@ -7,7 +7,7 @@ if fs.exists("install.lua") then
   fs.delete("install.lua")
 end
 
-os.setTextColor(colors.red)
+term.setTextColor(colors.red)
 print('downloading the "installer download"')
 sleep(4)
 print("this will continue in 20 seconds")
