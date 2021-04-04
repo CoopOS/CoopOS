@@ -1,7 +1,5 @@
 local tArgs= {...}
 
-local event, key, isHeld = os.pullEvent("key")
-
 local modetype = "beta"
 
 local reboot = false
@@ -24,14 +22,6 @@ if modetype == "beta" then
   sleep(.75)
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
   term.setTextColor(colors.white)
-  print('want to continue? (hold Y|hold N)')
-  if isHeld then
-      if key == keys.y then
-      elseif key == keys.n then
-        error('KILLED PROCESS')
-      end
-  end
-  -- end of question
   sleep(4)
   print('Bugs? Submit a issue on GitHub for the beta')
   sleep(8)
