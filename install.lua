@@ -1,9 +1,12 @@
+sleep(6)
 local tArgs= {...}
 local pullEvent = os.pullEvent
 os.pullEvent = os.pullEventRaw
 local modetype = "beta"
-
-
+term.clear()
+term.setTextColor(colors.yellow)
+print('CoopOS Installer')
+term.setTextColor(colors.white)
 local reboot = false
 local user = "CoopPlayzz"
 local branch = modetype
@@ -17,8 +20,12 @@ for k,v in ipairs(tArgs) do
 end
 sleep(3)
 print('LOADING...')
-sleep(3)
+sleep(2)
 if modetype == "beta" then
+  term.clear()
+  term.setTextColor(colors.yellow)
+  print('CoopOS Installer')
+  sleep(.75)
   term.setTextColor(colors.red)
   print('WARNING:')
   sleep(.75)
@@ -123,6 +130,18 @@ if reboot then
   term.clear()
   --end animation
   print("REBOOTING")
+  sleep(.89)
+  --start "..." animation
+  sleep(.3)
+  term.clear()
+  print('REBOOTING.')
+  sleep(.3)
+  term.clear()
+  print('REBOOTING..')
+  sleep(.3)
+  term.clear()
+  print('REBOOTING...')
+  --end of "..." animation
   sleep(3)
   os.reboot()
 end
