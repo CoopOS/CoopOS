@@ -28,7 +28,7 @@ if modetype == "beta" then
   if isHeld then
       if key == keys.y then
       elseif key == keys.n then
-        error(KILLED PROCESS)
+        error('KILLED PROCESS')
       end
   end
   -- end of question
