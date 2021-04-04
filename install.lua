@@ -18,6 +18,7 @@ if modetype == beta then
   term.setTextColor(colors.red)
   print('WARNING:')
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
+  term.setTextColor(colors.white)
   print('Bugs? Submit a issue on GitHub for the beta')
 end
 
