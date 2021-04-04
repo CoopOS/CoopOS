@@ -46,16 +46,16 @@ print("Installation completed.(not relly just a test)")
 if reboot then
   print('SYSTEM REBOOTING IN '..rebootCountdown)
   sleep(1)
-  rebootCountdown = 4
+  local rebootCountdown = 4
   print('SYSTEM REBOOTING IN '..rebootCountdown)
   sleep(1)
-  rebootCountdown = 3
+  local rebootCountdown = 3
   print('SYSTEM REBOOTING IN '..rebootCountdown)
   sleep(1)
-  rebootCountdown = 2
+  local rebootCountdown = 2
   print('SYSTEM REBOOTING IN '..rebootCountdown)
   sleep(1)
-  rebootCountdown = 1
+  local rebootCountdown = 1
   print('SYSTEM REBOOTING IN '..rebootCountdown)
   sleep(1)
   print("REBOOTING")
