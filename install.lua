@@ -37,7 +37,6 @@ if modetype == "beta" then
   sleep(15)
   os.pullEvent = os.pullEventRaw
   shell.run("clear")
-  sleep(2)
   
   term.setTextColor(colors.yellow)
   print('CoopOS Installer')
@@ -48,6 +47,7 @@ if modetype == "beta" then
   sleep(8)
 else
   os.pullEvent = os.pullEventRaw
+  shell.run("clear")
   term.setTextColor(colors.yellow)
   print('CoopOS Installer')
   term.setTextColor(colors.white)
@@ -69,7 +69,7 @@ elseif modetype == "master" then
   print('mode type: master')
 else
   shell.run("clear")
-  sleep(2)
+  sleep(0.75)
   term.setTextColor(colors.yellow)
   print('CoopOS Installer')
   term.setTextColor(colors.white)
@@ -78,9 +78,8 @@ else
     fs.delete("startup.lua")
   end
   shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/'..modetype..'/installerrormode.lua startup.lua')
-  sleep(3)
+  sleep(6)
   shell.run("clear")
-  sleep(3)
   term.setTextColor(colors.yellow)
   print('CoopOS Installer')
   term.setTextColor(colors.white)
@@ -88,9 +87,9 @@ else
 end
 print('version: v'..version..'')
 
-sleep(5)
+sleep(9.25)
 shell.run("clear")
-sleep(5)
+sleep(.75)
 term.setTextColor(colors.yellow)
 print('CoopOS Installer')
 term.setTextColor(colors.white)
@@ -100,6 +99,7 @@ print("Downloading...")
 if fs.exists("startup.lua") then
   fs.delete("startup.lua")
 end
+if fs.exists("installerdown")
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
 
 sleep(.75)
