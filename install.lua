@@ -61,7 +61,7 @@ print('Got CoopOS Installer Startup')
 
 
 
-shell.run("label set §rCoopOSv"..version.."")
+shell.run('label set "CoopOSv'..version..'"')
 
 if reboot then
   print('SYSTEM REBOOTING IN 5')
