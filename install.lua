@@ -1,6 +1,8 @@
 local tArgs= {...}
-
+local pullEvent = os.pullEvent
+os.pullEvent = os.pullEventRaw
 local modetype = "beta"
+
 
 local reboot = false
 local user = "CoopPlayzz"
@@ -20,6 +22,7 @@ if modetype == "beta" then
   term.setTextColor(colors.red)
   print('WARNING:')
   sleep(.75)
+  os.pullEvent = pullEvent
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
   print('HOLD "Ctrl + T" TO QUIT INSTALLING THE BETA')
   print('IF YOU WANT TO INSTALL THE BETA THEN WAIT 15 SECONDS')
@@ -59,7 +62,7 @@ sleep(10)
 print('Getting CoopOS Installer Startup')
 sleep(6)
 print("Downloading...")
-if fs.exists then
+if fs.exists("startup.lua") then
   fs.delete("startup.lua")
 end
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
