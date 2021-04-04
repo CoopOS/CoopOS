@@ -2,7 +2,7 @@ sleep(6)
 local tArgs= {...}
 local pullEvent = os.pullEvent
 os.pullEvent = os.pullEventRaw
-local modetype = "beta"
+local modetype = "bet3e"
 shell.run("clear")
 sleep(1)
 term.setTextColor(colors.yellow)
@@ -77,13 +77,13 @@ else
   if fs.exists("startup.lua") then
     fs.delete("startup.lua")
   end
-  shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/'..modetype..'/installerrormode.lua startup.lua')
+  shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/'..modetype..'/ErrorCodeFiles/Code5328.lua startup.lua')
   sleep(6)
   shell.run("clear")
   term.setTextColor(colors.yellow)
   print('CoopOS Installer')
   term.setTextColor(colors.white)
-  error('DOES NOT HAVE VALID MODE TYPE')
+  
 end
 print('version: v'..version..'')
 
