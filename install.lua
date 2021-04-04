@@ -29,7 +29,7 @@ end
 
 
 
-print("The options you have chose:")
+print("The options you have chosen:")
 sleep(2)
 if reboot == true then
   print('reboot: true')
