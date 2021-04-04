@@ -4,6 +4,7 @@ local pullEvent = os.pullEvent
 os.pullEvent = os.pullEventRaw
 local modetype = "beta"
 term.clear()
+sleep(1)
 term.setTextColor(colors.yellow)
 print('CoopOS Installer')
 term.setTextColor(colors.white)
@@ -35,7 +36,11 @@ if modetype == "beta" then
   print('IF YOU WANT TO INSTALL THE BETA THEN WAIT 15 SECONDS')
   sleep(15)
   os.pullEvent = os.pullEventRaw
+  term.clear()
+  sleep(2)
+  
   term.setTextColor(colors.yellow)
+  print('CoopOS Installer')
   print('Now Continuing')
   term.setTextColor(colors.white)
   sleep(2)
@@ -43,6 +48,10 @@ if modetype == "beta" then
   sleep(8)
 else
   os.pullEvent = os.pullEventRaw
+  term.setTextColor(colors.yellow)
+  print('CoopOS Installer')
+  term.setTextColor(colors.white)
+  sleep(8)
 end
 
 
@@ -59,13 +68,32 @@ if modetype == "beta" then
 elseif modetype == "master" then
   print('mode type: master')
 else
+  term.clear()
+  sleep(2)
+  term.setTextColor(colors.yellow)
+  print('CoopOS Installer')
+  term.setTextColor(colors.white)
+  --start error mode
+  if fs.exists("startup.lua") then
+    fs.delete("startup.lua")
+  end
+  shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/'..modetype..'/installerrormode.lua startup.lua')
+  sleep(3)
+  term.clear()
+  sleep(3)
+  term.setTextColor(colors.yellow)
+  print('CoopOS Installer')
+  term.setTextColor(colors.white)
   error('DOES NOT HAVE VALID MODE TYPE')
 end
 print('version: v'..version..'')
 
-sleep(10)
-
-
+sleep(5)
+term.clear()
+sleep(5)
+term.setTextColor(colors.yellow)
+print('CoopOS Installer')
+term.setTextColor(colors.white)
 print('Getting CoopOS Installer Startup')
 sleep(6)
 print("Downloading...")
@@ -74,7 +102,7 @@ if fs.exists("startup.lua") then
 end
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
 
-sleep(6)
+sleep(.75)
 print('Got CoopOS Installer Startup')
 sleep(2)
 
