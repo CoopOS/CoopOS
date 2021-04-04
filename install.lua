@@ -37,15 +37,17 @@ if reboot == true then
   print('reboot: false')
 end
 
-
+function installOS()
+  
+  
+  --coming soon
+end
 
 
 sleep(6)
 
 
 
-
-wget("http://www.pastebin.com/raw/W5ZkVYSi",".gitget")
 shell.run(".gitget "..user.." CoopOS "..branch.." CoopOS")
 installOS()
 print("Installation completed.(not relly just a test)")
