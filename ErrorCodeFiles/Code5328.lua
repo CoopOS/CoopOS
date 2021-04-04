@@ -64,7 +64,7 @@ term.setTextColor(colors.red)
 shell.run("clear")
 print("CoopOS Installer Error")
 term.setTextColor(colors.white)
-print('See more on GitHub about code "'errorCode'" with The CoopOS Wiki')
+print('See more on GitHub about code "'..errorCode..'" with The CoopOS Wiki')
 sleep(7.5)
 
 
