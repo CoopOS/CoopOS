@@ -77,7 +77,7 @@ else
   if fs.exists("startup.lua") then
     fs.delete("startup.lua")
   end
-  shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/'..modetype..'/ErrorCodeFiles/Code5328.lua startup.lua')
+  shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/ErrorCodeFiles/Code5328.lua startup.lua')
   sleep(6)
   shell.run("clear")
   term.setTextColor(colors.yellow)
