@@ -46,20 +46,17 @@ else
 end
 
 
+sleep(10)
 
 
-
-
-function installOS()
-  
-  print('???')
-  --coming soon
-end
-
+print('Getting CoopOS Installer Startup')
+sleep(6)
+print(Downloading...)
+fs.delete("startup.lua")
+wget("https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Installer/startup.lua","startup.lua")
 
 sleep(6)
-installOS()
-print("Installation completed.(not relly just a test)")
+print("Got CoopOS Installer Startup")
 
 
 
