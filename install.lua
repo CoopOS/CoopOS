@@ -61,6 +61,7 @@ print('Got CoopOS Installer Startup')
 
 
 
+shell.run("label set §rCoopOS")
 
 if reboot then
   print('SYSTEM REBOOTING IN 5')
