@@ -5,7 +5,7 @@ local modetype = "beta"
 local reboot = false
 local user = "CoopPlayzz"
 local branch = modetype
-
+local version = "1.0 BETA"
 
 
 for k,v in ipairs(tArgs) do
@@ -61,7 +61,7 @@ print('Got CoopOS Installer Startup')
 
 
 
-shell.run("label set §rCoopOS")
+shell.run("label set §rCoopOSv"..version.."")
 
 if reboot then
   print('SYSTEM REBOOTING IN 5')
