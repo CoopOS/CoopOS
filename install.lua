@@ -109,7 +109,7 @@ sleep(2)
 fs.delete("installerdown.lua")
 
 
-shell.run('label set "CoopOSv'..version..'"')
+shell.run('label set "CoopOS v'..version..'"')
 sleep(2)
 if reboot then
   term.clear()
