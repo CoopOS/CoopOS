@@ -83,6 +83,7 @@ else
   term.setTextColor(colors.yellow)
   print('CoopOS Installer')
   term.setTextColor(colors.white)
+  os.reboot
   
 end
 print('version: v'..version..'')
