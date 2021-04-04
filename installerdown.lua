@@ -26,7 +26,7 @@ print('Loading core system files for this file. Estamated time: 15 seconds usual
 sleep(13)
 print("downloading installer")
 sleep(3)
-if fs.exists("install.lua")
+if fs.exists("install.lua") then
   fs.delete("install.lua")
 end
 sleep(.75)
