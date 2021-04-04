@@ -4,7 +4,6 @@ local modetype = beta
 
 local deleteFiles = false
 local reboot = false
-local rebootCountdown = 5
 local user = "CoopPlayzz"
 local branch = modetype
 
@@ -44,19 +43,15 @@ print("Installation completed.(not relly just a test)")
 
 
 if reboot then
-  print('SYSTEM REBOOTING IN '..rebootCountdown)
+  print('SYSTEM REBOOTING IN 5')
   sleep(1)
-  local rebootCountdown = 4
-  print('SYSTEM REBOOTING IN '..rebootCountdown)
+  print('SYSTEM REBOOTING IN 4')
   sleep(1)
-  local rebootCountdown = 3
-  print('SYSTEM REBOOTING IN '..rebootCountdown)
+  print('SYSTEM REBOOTING IN 3')
   sleep(1)
-  local rebootCountdown = 2
-  print('SYSTEM REBOOTING IN '..rebootCountdown)
+  print('SYSTEM REBOOTING IN 2')
   sleep(1)
-  local rebootCountdown = 1
-  print('SYSTEM REBOOTING IN '..rebootCountdown)
+  print('SYSTEM REBOOTING IN 1')
   sleep(1)
   print("REBOOTING")
   sleep(3)
