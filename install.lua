@@ -14,7 +14,7 @@ for k,v in ipairs(tArgs) do
   end
 end
 
-if modetype == beta then
+if modetype == "beta" then
   term.setTextColor(colors.red)
   print('WARNING:')
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
