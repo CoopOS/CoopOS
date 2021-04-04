@@ -1,6 +1,6 @@
 local tArgs= {...}
 
-local modetype = beta
+local modetype = "beta"
 
 local reboot = false
 local user = "CoopPlayzz"
@@ -32,9 +32,9 @@ if reboot == true then
   print('reboot: false')
 end
 sleep(.75)
-if modetype == beta then
+if modetype == "beta" then
   print('mode type: beta')
-elseif modetype == master then
+elseif modetype == "master" then
   print('mode type: master')
 else
   error('DOES NOT HAVE VALID MODE TYPE')
