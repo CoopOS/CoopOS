@@ -13,13 +13,18 @@ for k,v in ipairs(tArgs) do
     reboot = true
   end
 end
-
+sleep(3)
+print('LOADING...')
+sleep(3)
 if modetype == "beta" then
   term.setTextColor(colors.red)
   print('WARNING:')
+  sleep(.75)
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
   term.setTextColor(colors.white)
+  sleep(4)
   print('Bugs? Submit a issue on GitHub for the beta')
+  sleep(8)
 end
 
 
