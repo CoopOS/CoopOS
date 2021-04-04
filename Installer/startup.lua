@@ -1,5 +1,6 @@
 local versionMode = "beta"
-
+local pullEvent = os.pullEvent
+os.pullEvent = os.pullEventRaw
 
 print("test completed")
 sleep(7)
@@ -9,6 +10,7 @@ end
 
 print('downloading the "installer download"')
 sleep(4)
+os.pullEvent = pullEvent
 print("this will continue in 20 seconds")
 sleep(.75)
 print('right now please hold "Ctrl + T" To quit the install')
