@@ -4,7 +4,7 @@ local tArgs= {...}
 local installerRunAfterDownload = false
 local deleteFileAfterDownload = false
 
-local versionReleaseMode = beta
+local versionReleaseMode = "beta"
 
 for k,v in ipairs(tArgs) do
   if v == "-d" then
@@ -26,9 +26,13 @@ print('Loading core system files for this file. Estamated time: 15 seconds usual
 sleep(13)
 print("downloading installer")
 sleep(3)
-fs.delete("install.lua")
+if fs.exists("install.lua")
+  fs.delete("install.lua")
+end
 sleep(.75)
-fs.delete("startup.lua")
+if fs.exists("startup.lua") then
+  fs.delete("startup.lua")
+end
 sleep(2)
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..versionReleaseMode.."/install.lua install.lua")
 print('installer downloaded')
