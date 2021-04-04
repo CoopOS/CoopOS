@@ -1,7 +1,12 @@
-sleep(6)
-local tArgs= {...}
 local pullEvent = os.pullEvent
 os.pullEvent = os.pullEventRaw
+
+if fs.exists("startup.lua") then
+  fs.delete("startup.lua")
+end
+
+sleep(6)
+local tArgs= {...}
 local modetype = "bet3e"
 shell.run("clear")
 sleep(1)
@@ -97,9 +102,6 @@ term.setTextColor(colors.white)
 print('Getting CoopOS Installer Startup')
 sleep(6)
 print("Downloading...")
-if fs.exists("startup.lua") then
-  fs.delete("startup.lua")
-end
 if fs.exists("installerdown.lua") then
   fs.delete("installerdown.lua")
 end
