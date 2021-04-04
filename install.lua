@@ -25,9 +25,18 @@ end
 
 print("OS does not install yet it's in dev mode right now. The following things do not do anything but they will soon so don't worry. You have chose:")
 sleep(2)
-print('delete files is '..deleteFiles)
+if deleteFiles == true then
+  print('delete files: true')
+  else
+  print('delete files: false')
+end
 sleep(.75)
-print('reboot is '..reboot)
+if reboot == true then
+  print('reboot: true')
+  else
+  print('reboot: false')
+end
+
 
 
 
