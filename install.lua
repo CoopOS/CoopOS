@@ -51,7 +51,7 @@ sleep(10)
 
 print('Getting CoopOS Installer Startup')
 sleep(6)
-print('Downloading...')
+print("Downloading...")
 fs.delete("startup.lua")
 wget("https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Installer/startup.lua","startup.lua")
 
