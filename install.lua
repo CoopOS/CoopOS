@@ -31,8 +31,9 @@ if modetype == "beta" then
   sleep(2)
   print('Bugs? Submit a issue on GitHub for the beta')
   sleep(8)
+else
+  os.pullEvent = os.pullEventRaw
 end
-
 
 
 print("The options you have chosen:")
@@ -50,7 +51,7 @@ elseif modetype == "master" then
 else
   error('DOES NOT HAVE VALID MODE TYPE')
 end
-print(version)
+print('version: v'..version..'')
 
 sleep(10)
 
@@ -58,8 +59,10 @@ sleep(10)
 print('Getting CoopOS Installer Startup')
 sleep(6)
 print("Downloading...")
-fs.delete("startup.lua")
-shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Installer/startup.lua startup.lua")
+if fs.exists then
+  fs.delete("startup.lua")
+end
+shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
 
 sleep(6)
 print('Got CoopOS Installer Startup')
