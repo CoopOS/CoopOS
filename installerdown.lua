@@ -47,4 +47,9 @@ end
 if installerRunAfterDownload == true then
   print('running installer')
   shell.run("install -r")
+elseif installerRunAfterDownload == false then
+  shell.run("wget https://github.com/CoopPlayzz/CoopOS/raw/beta/startupToInstaller.lua startup.lua")
+  print('just did some stuff ^')
+  sleep(2)
+  print('once you reboot you will start installing CoopOS')
 end
