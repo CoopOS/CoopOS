@@ -56,7 +56,7 @@ fs.delete("startup.lua")
 wget("https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Installer/startup.lua","startup.lua")
 
 sleep(6)
-print("Got CoopOS Installer Startup")
+print('Got CoopOS Installer Startup')
 
 
 
