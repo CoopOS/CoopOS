@@ -67,11 +67,16 @@ term.setTextColor(colors.white)
 print('See more on GitHub about code "'..errorCode..'" with The CoopOS Wiki')
 sleep(7.5)
 
+term.setTextColor(colors.red)
+sleep(0.15)
+shell.run("clear")
+print("CoopOS Installer Error")
+term.setTextColor(colors.white)
 
 
 fs.delete("startup.lua")
 
-
+shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Installer/startup.lua startup.lua")
 
 
 if reboot then
@@ -134,5 +139,8 @@ if reboot then
   print('REBOOTING...')
   --end of "..." animation
   sleep(3)
-  os.reboot()
+  shell.run("clear")
+  sleep(4)
+  shell.run("mutishell")
+  print("once you reboot you will start to install CoopOS")
 end
