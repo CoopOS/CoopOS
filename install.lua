@@ -107,7 +107,6 @@ if fs.exists("installerdown.lua") then
   fs.delete("installerdown.lua")
 end
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
-shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/rebootInstallation.lua reboot.lua")
 sleep(.75)
 print('Got CoopOS Installer Startup')
 sleep(2)
