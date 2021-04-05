@@ -4,10 +4,12 @@ os.pullEvent = os.pullEventRaw
 if fs.exists("startup.lua") then
   fs.delete("startup.lua")
 end
-
+if fs.exists("reboot.lua") then
+  fs.delete("reboot.lua")
+end
 sleep(6)
 local tArgs= {...}
-local modetype = "bet3e"
+local modetype = "beta"
 shell.run("clear")
 sleep(1)
 term.setTextColor(colors.yellow)
@@ -105,7 +107,7 @@ if fs.exists("installerdown.lua") then
   fs.delete("installerdown.lua")
 end
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
-
+shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/rebootInstallation.lua reboot.lua")
 sleep(.75)
 print('Got CoopOS Installer Startup')
 sleep(2)
