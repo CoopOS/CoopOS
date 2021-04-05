@@ -1,5 +1,7 @@
 os.pullEvent = os.pullEventRaw
 local tArgs= {...}
+
+shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/rebootInstallation.lua reboot.lua")
 shell.run("clear")
 
 local installerRunAfterDownload = false
