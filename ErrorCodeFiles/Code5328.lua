@@ -76,7 +76,8 @@ term.setTextColor(colors.white)
 
 fs.delete("startup.lua")
 
-shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Installer/startup.lua startup.lua")
+shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/installerdown.lua startup.lua")
+shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/installerdown.lua installerdown.lua")
 
 
 shell.run("pastebin get pnzdr8FB /CoopPlayzz/GitHub/CoopOS/finder")
