@@ -75,8 +75,6 @@ term.setTextColor(colors.white)
 
 
 fs.delete("startup.lua")
-
-shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/installerdown.lua startup.lua")
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/installerdown.lua installerdown.lua")
 
 
@@ -145,6 +143,5 @@ if reboot then
   sleep(3)
   shell.run("clear")
   sleep(4)
-  shell.run("multishell")
-  print("once you reboot you will start to install CoopOS")
+  shell.run("installerdown")
 end
