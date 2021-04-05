@@ -113,8 +113,8 @@ sleep(2)
 fs.delete("installerdown.lua")
 
 
-shell.run('label set "CoopOS v'..version..'"')
-sleep(2)
+shell.run('label set "§rCoopOS v'..version..'"')
+sleep(.5)
 if reboot then
   shell.run("clear")
   print('SYSTEM REBOOTING IN 5')
