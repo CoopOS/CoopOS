@@ -141,6 +141,6 @@ if reboot then
   sleep(3)
   shell.run("clear")
   sleep(4)
-  shell.run("mutishell")
+  shell.run("multishell")
   print("once you reboot you will start to install CoopOS")
 end
