@@ -1,4 +1,4 @@
-term.clear()
+shell.run("clear")
 local versionMode = "beta"
 local pullEvent = os.pullEvent
 os.pullEvent = os.pullEventRaw
@@ -18,7 +18,11 @@ end
 if fs.exists("installerdown.lua") then
   fs.delete("installerdown.lua")
 end
-print('downloading the "installer download"')
+shell.run("clear")
+term.setTextColor(colors.yellow)
+print("CoopOS v"..version)
+term.setTextColor(colors.white)
+print('downloading the "installer downloader"')
 sleep(4)
 os.pullEvent = pullEvent
 print("this will continue in 20 seconds")
@@ -30,8 +34,11 @@ print('you will not be able to quit this program in the 20 seconds')
 
 
 sleep(20)
-
+shell.run("clear")
 os.pullEvent = os.pullEventRaw
+term.setTextColor(colors.yellow)
+print("CoopOS v"..version)
+term.setTextColor(colors.white)
 print('installing downloader')
 sleep(2)
 shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/'..versionMode..'/installerdown.lua installerdown.lua')
