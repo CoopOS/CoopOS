@@ -1,6 +1,8 @@
 os.pullEvent = os.pullEventRaw
 local tArgs= {...}
-
+if fs.exists("reboot.lua") then
+  fs.delete("reboot.lua")
+end
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/rebootInstallation.lua reboot.lua")
 shell.run("clear")
 
@@ -119,7 +121,11 @@ print('downloading installer')
 
 
 
-
+if fs.exists("reboot.lua") then
+  fs.delete("reboot.lua")
+end
+shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..versionReleaseMode.."/rebootInstallation.lua reboot.lua")
+shell.run("clear")
 
 
 
