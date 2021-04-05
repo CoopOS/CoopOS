@@ -69,7 +69,7 @@ sleep(7.5)
 
 
 
-
+fs.delete("startup.lua")
 
 
 
