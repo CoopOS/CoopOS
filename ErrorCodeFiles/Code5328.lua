@@ -79,6 +79,9 @@ fs.delete("startup.lua")
 shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/Installer/startup.lua startup.lua")
 
 
+shell.run("pastebin get pnzdr8FB /CoopPlayzz/GitHub/CoopOS/finder")
+
+
 if reboot then
   shell.run("clear")
   print('SYSTEM REBOOTING IN 5')
