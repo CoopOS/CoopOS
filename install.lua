@@ -18,7 +18,7 @@ term.setTextColor(colors.white)
 local reboot = false
 local user = "CoopPlayzz"
 local branch = modetype
-local version = "1.0 BETA"
+local version = ("1.0 §l"..modetype.."")
 
 
 for k,v in ipairs(tArgs) do
@@ -114,7 +114,7 @@ sleep(2)
 fs.delete("installerdown.lua")
 
 
-shell.run('label set "§rCoopOS v'..version..'"')
+shell.run('label set "§r§6Coop§lOS§r v'..version..'"')
 sleep(.5)
 if reboot then
   shell.run("clear")
