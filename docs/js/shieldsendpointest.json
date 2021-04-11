@@ -1,0 +1,6 @@
+return {   
+"schemaVersion": 1,   
+"label": "A label!",   
+"message": "yeet",   
+"color": "orange" 
+}
