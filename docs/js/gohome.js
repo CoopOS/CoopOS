@@ -1,3 +1,1 @@
-myFunction {
-  window.replace("https://coopplayzz.github.io/CoopOS")
-}
+window.replace("https://coopplayzz.github.io/CoopOS")
