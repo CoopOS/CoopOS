@@ -1,1 +1,1 @@
-window.replace("https://coopplayzz.github.io/CoopOS")
+location.replace("https://coopplayzz.github.io/CoopOS")
