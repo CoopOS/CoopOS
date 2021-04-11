@@ -1,6 +1,16 @@
-return {   
-"schemaVersion": 1,   
-"label": "A label!",   
-"message": "yeet",   
-"color": "orange" 
+const endpoint = require("@runkit/runkit/json-endpoint/1.0.0")
+const request = require("request") // peer dependency
+
+
+
+
+
+endpoint(module.exports, async function(req)
+{
+  return {   
+    "schemaVersion": 1,   
+    "label": "A label!",   
+    "message": "yeet",   
+    "color": "orange" 
 }
+})
