@@ -84,7 +84,7 @@ else
   if fs.exists("startup.lua") then
     fs.delete("startup.lua")
   end
-  shell.run('wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/ErrorCodeFiles/Code5328.lua startup.lua')
+  shell.run('wget https://raw.githubusercontent.com/CoopOS/CoopOS/beta/ErrorCodeFiles/Code5328.lua startup.lua')
   sleep(6)
   shell.run("clear")
   term.setTextColor(colors.yellow)
@@ -106,7 +106,7 @@ print("Downloading...")
 if fs.exists("installerdown.lua") then
   fs.delete("installerdown.lua")
 end
-shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
+shell.run("wget https://raw.githubusercontent.com/CoopOS/CoopOS/"..modetype.."/Installer/startup.lua startup.lua")
 sleep(.75)
 print('Got CoopOS Installer Startup')
 sleep(2)
