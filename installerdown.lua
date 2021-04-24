@@ -123,7 +123,7 @@ print('downloading installer')
 if fs.exists("reboot.lua") then
   fs.delete("reboot.lua")
 end
-shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..versionReleaseMode.."/rebootInstallation.lua reboot.lua")
+shell.run("wget https://raw.githubusercontent.com/CoopOS/CoopOS/"..versionReleaseMode.."/rebootInstallation.lua reboot.lua")
 shell.run("clear")
 
 
@@ -138,7 +138,7 @@ if fs.exists("startup.lua") then
   fs.delete("startup.lua")
 end
 sleep(2)
-shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/"..versionReleaseMode.."/install.lua install.lua")
+shell.run("wget https://raw.githubusercontent.com/CoopOS/CoopOS/"..versionReleaseMode.."/install.lua install.lua")
 shell.run("clear")
 term.setTextColor(colors.yellow)
 print('CoopOS "Installer" Downloader')
@@ -158,7 +158,7 @@ if installerRunAfterDownload == true then
   shell.run("clear")
   shell.run("install -r")
 elseif installerRunAfterDownload == false then
-  shell.run("wget https://raw.githubusercontent.com/CoopPlayzz/CoopOS/beta/startupToInstaller.lua startup.lua")
+  shell.run("wget https://raw.githubusercontent.com/CoopOS/CoopOS/beta/startupToInstaller.lua startup.lua")
   sleep(2)
   shell.run("clear")
   term.setTextColor(colors.yellow)
