@@ -2,5 +2,6 @@
   "schemaVersion": 1,
   "label": "TEST",
   "message": "sweet world",
-  "color": "orange"
+  "color": "orange",
+  "logoSvg": "https://raw.githubusercontent.com/CoopOS/CoopOS/beta/docs/img/CoopOSLogo.svg"
 }
