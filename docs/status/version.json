@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "label": "TEST",
-  "message": "sweet world",
-  "color": "orange"
+  "label": "beta Version",
+  "message": "1.0 [BETA]",
+  "color": "critical"
 }
