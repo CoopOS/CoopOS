@@ -4,5 +4,5 @@
   "message": "sweet world",
   "color": "orange",
   "logoSvg": "https://raw.githubusercontent.com/CoopOS/CoopOS/beta/docs/img/CoopOSLogo.svg",
-  "logoColor": "red"
+  "logoColor": "#ec1c24"
 }
