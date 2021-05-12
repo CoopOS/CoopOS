@@ -1,1 +1,1 @@
-location.replace("https://coopplayzz.github.io/CoopOS")
+location.replace("https://coopos.github.io/CoopOS")
