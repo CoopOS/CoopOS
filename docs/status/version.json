@@ -2,5 +2,6 @@
   "schemaVersion": 1,
   "label": "beta Version",
   "message": "1.0 [BETA]",
-  "color": "critical"
+  "color": "critical",
+  "style": "for-the-badge"
 }
