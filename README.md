@@ -3,6 +3,6 @@
 
 
 
-[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CoopPlayzz/CoopOS/master?label=master%20last%20commit&logo=github&style=for-the-badge)](https://github.com/CoopOS/CoopOS/tree/master)
+[![GitHub last commit (branch)](https://img.shields.io/github/last-commit/CoopOS/CoopOS/master?label=master%20last%20commit&logo=github&style=for-the-badge)](https://github.com/CoopOS/CoopOS/tree/master)
 # CoopOS
 CoopOS is a OS for the ComputerCraft Mod on Minecraft (Java Edition)
