@@ -1,5 +1,5 @@
-local termpullEvent = os.pullEvent("terminate")
-os.pullEvent("terminate") = os.pullEventRaw
+local termpullEvent = os.pullEvent
+os.pullEvent = os.pullEventRaw
 
 if fs.exists("startup.lua") then
   fs.delete("startup.lua")
@@ -37,12 +37,12 @@ if modetype == "beta" then
   term.setTextColor(colors.red)
   print('WARNING:')
   sleep(.75)
-  os.pullEvent("terminate") = termpullEvent
+  os.pullEvent = termpullEvent
   print('YOU ARE USING A BETA, BETA"S OF THIS OS CAN BE VERY UNSTABLE USE AT OWN RISK!')
   print('HOLD "Ctrl + T" TO QUIT INSTALLING THE BETA')
   print('IF YOU WANT TO INSTALL THE BETA THEN WAIT 15 SECONDS')
   sleep(15)
-  os.pullEvent("terminate") = os.pullEventRaw
+  os.pullEvent = os.pullEventRaw
   shell.run("clear")
   
   term.setTextColor(colors.yellow)
