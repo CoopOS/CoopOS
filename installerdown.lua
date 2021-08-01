@@ -16,6 +16,7 @@ if not term.isColor then
 elseif not term.isColor() then
   shell.run("clear")
   print('You CANT Run this sorry!')
+  sleep(5)
   fs.delete('installerdown.lua')
   if fs.exists("reboot.lua") then
      fs.delete("reboot.lua")
