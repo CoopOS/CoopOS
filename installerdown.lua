@@ -1,4 +1,17 @@
 os.pullEvent = os.pullEventRaw
+print("checking computer type...")
+sleep(5)
+if term.isColor != true then
+  shell.run("clear")
+  print('You CANT Run this sorry!')
+  fs.delete('installerdown.lua')
+  if fs.exists("reboot.lua") then
+     fs.delete("reboot.lua")
+  end
+  if fs.exists("install.lua") then
+     fs.delete("install.lua")
+  end
+end
 local tArgs= {...}
 if fs.exists("reboot.lua") then
   fs.delete("reboot.lua")
