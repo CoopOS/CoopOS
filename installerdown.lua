@@ -1,7 +1,7 @@
 os.pullEvent = os.pullEventRaw
 print("checking computer type...")
 sleep(5)
-if term.isColor != true then
+if not term.isColor == true then
   shell.run("clear")
   print('You CANT Run this sorry!')
   fs.delete('installerdown.lua')
