@@ -9,7 +9,7 @@ if fs.exists("reboot.lua") then
 end
 sleep(6)
 local tArgs= {...}
-local modetype = "beta"
+local modetype = "ur8932y8r3786r47836578432hv47823658vthn43257v64789j5t7548n86t7n64b57tb723495743826bn5789"
 shell.run("clear")
 sleep(1)
 term.setTextColor(colors.yellow)
