@@ -6,12 +6,12 @@ shell.run("clear")
 local isloading = false
 local progress = 0
 local loadingbar = {}
-loadingbar.startani = function(y,startx=3,endx=16)
+startani = function(y,startx=3,endx=16)
     isloading = true
     term.setCursorPos(startx,y)
-    loadingbar.animate(y,startx,endx)
+    animatelbar(y,startx,endx)
 end
-loadingbar.animate = function(ypos,startpos,endpos,persec=1.5,startprogress=0,colorun=colors.lightGray,colorye=colors.white)
+animatelbar = function(ypos,startpos,endpos,persec=1.5,startprogress=0,colorun=colors.lightGray,colorye=colors.white)
     progress = startprogress
     repeat
         term.clearLine()
@@ -25,7 +25,7 @@ loadingbar.animate = function(ypos,startpos,endpos,persec=1.5,startprogress=0,co
         sleep(persec)
      until(isloading = false)
 end
-loadingbar.endani = function()
+endani = function()
     isloading = false
 end
 
@@ -36,4 +36,4 @@ sleep(1)
 term.setCursorPos(17, 15)
 print("Rolling Back System")
 term.setCursorPos(19, 16)
-loadingbar.startani(17,19,27)
+startani(17,19,27)
