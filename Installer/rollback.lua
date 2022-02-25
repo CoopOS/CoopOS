@@ -10,7 +10,11 @@ local dotsimage = 0
 function dots()
     
     local olddots = dotsimage
-    if dotsimage == 3 then dotsimage = 0 else dotsimage = dotsimage + 1 end
+    if dotsimage == 3 then 
+        dotsimage = 0 
+    else 
+        dotsimage = dotsimage + 1 
+    end
     return "/CoopOS/dots" + olddots + ".nfp"
 end
 --start rollback
@@ -18,6 +22,7 @@ end
 sleep(1)
 for i=10,1,-1 do 
     term.setCursorPos(17, 15)
+    print("Rolling Back System")
     paintutils.drawImage(paintutils.loadImage(dots()), 19, 16)
     sleep(1)
     shell.run("clear")
