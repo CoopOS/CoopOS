@@ -10,7 +10,7 @@ local dotsimage = 0
 function dots()
     
     local olddots = dotsimage
-    if dotsimage == 3 then dotsimage = 0 else dotsimage++ end
+    if dotsimage == 3 then dotsimage = 0 else dotsimage += end
     return "/CoopOS/dots" + olddots + ".nfp"
 end
 --start rollback
