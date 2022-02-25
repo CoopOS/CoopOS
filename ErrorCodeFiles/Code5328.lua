@@ -5,7 +5,7 @@ local reboot = true
 
 
 
-sleep(5)
+
 shell.run("clear")
 os.pullEvent = os.pullEventRaw
 term.setTextColor(colors.yellow)
@@ -75,10 +75,11 @@ term.setTextColor(colors.white)
 
 
 fs.delete("startup.lua")
-shell.run("wget https://raw.githubusercontent.com/CoopOS/CoopOS/beta/installerdown.lua installerdown.lua")
+--shell.run("wget https://raw.githubusercontent.com/CoopOS/CoopOS/beta/Installer/rollback.lua installerdown.lua")
 
 
-shell.run("pastebin get pnzdr8FB /CoopPlayzz/GitHub/CoopOS/finder")
+--shell.run("pastebin get pnzdr8FB /CoopPlayzz/GitHub/CoopOS/finder")
+fs.delete("/CoopOS/")
 
 
 if reboot then
@@ -143,5 +144,5 @@ if reboot then
   sleep(3)
   shell.run("clear")
   sleep(4)
-  shell.run("installerdown")
+  --shell.run("installerdown")
 end
