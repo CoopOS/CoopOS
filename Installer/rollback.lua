@@ -20,10 +20,24 @@ end
 --start rollback
 --term.setCursorPos(19, 16)
 sleep(1)
-for i=10,1,-1 do 
-    term.setCursorPos(17, 15)
+term.setCursorPos(17, 15)
     print("Rolling Back System")
-    paintutils.drawImage(paintutils.loadImage(dots()), 19, 16)
+    paintutils.drawImage(paintutils.loadImage("/CoopOS/dots0.nfp"), 19, 16)
     sleep(1)
     shell.run("clear")
-end
+
+term.setCursorPos(17, 15)
+    print("Rolling Back System")
+    paintutils.drawImage(paintutils.loadImage("/CoopOS/dots1.nfp"), 19, 16)
+    sleep(1)
+    shell.run("clear")
+    term.setCursorPos(17, 15)
+    print("Rolling Back System")
+    paintutils.drawImage(paintutils.loadImage("/CoopOS/dots2.nfp"), 19, 16)
+    sleep(1)
+    shell.run("clear")
+    term.setCursorPos(17, 15)
+    print("Rolling Back System")
+    paintutils.drawImage(paintutils.loadImage("/CoopOS/dots3.nfp"), 19, 16)
+    sleep(3)
+    shell.run("clear")
