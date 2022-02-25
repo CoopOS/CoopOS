@@ -1,12 +1,12 @@
 local isloading = false
 local progress = 0
 local module = {}
-module.startani = function(y,startx=3,endx=16)
+function module.startani(y,startx=3,endx=16)
     isloading = true
     term.setCursorPos(startx,y)
     module.animate(y,startx,endx)
 end
-module.animate = function(ypos,startpos,endpos,persec=1.5,startprogress=0,colorun=colors.lightGray,colorye=colors.white)
+function module.animate(ypos,startpos,endpos,persec=1.5,startprogress=0,colorun=colors.lightGray,colorye=colors.white)
     progress = startprogress
     repeat
         term.clearLine()
@@ -20,7 +20,7 @@ module.animate = function(ypos,startpos,endpos,persec=1.5,startprogress=0,coloru
         sleep(persec)
      until(isloading = false)
 end
-module.endani = function()
+function module.endani()
     isloading = false
 end
 
