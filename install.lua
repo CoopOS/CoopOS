@@ -16,7 +16,7 @@ term.setTextColor(colors.yellow)
 print('CoopOS Installer')
 term.setTextColor(colors.white)
 local reboot = false
-local user = "CoopPlayzz"
+local user = "coopeeo"
 local branch = modetype
 local version = ("1.0 §l"..modetype.."")
 
